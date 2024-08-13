@@ -31,7 +31,6 @@ main {
 .title {
   font-size: 40px;
   margin: 0;
-  margin-bottom: 0.25em;
 }
 
 .instructions {
@@ -39,6 +38,10 @@ main {
   font-weight: 400;
   margin-top: 0;
   text-align: center;
+  margin-bottom: 0;
+}
+.bottom {
+  margin-top: -0.5em;
 }
 .dice-container {
   display: grid;
@@ -57,6 +60,7 @@ main {
   align-items: center;
   cursor: pointer;
   transition: transform 0.6s ease-out;
+  border: 1px solid black;
 }
 .rolling {
   transform: rotateX(360deg) rotateY(360deg);
@@ -90,12 +94,17 @@ main {
   display: flex;
   justify-content: space-around;
   margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .best-time {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   padding: 0.5em;
   border: 1px solid #5035ff;
+}
+.time-roll-info span:hover {
+  scale: 1.2;
+  cursor: pointer;
 }
 @media (max-width: 450px) {
   main {
